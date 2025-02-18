@@ -31,5 +31,9 @@ namespace StatisticArray
         {
             Console.WriteLine(string.Join(", ",arr));
         }
+        public static void PrintGreater5(int[] arr)
+        {
+            Console.WriteLine(string.Join(", ", arr.Where(x=>x>5). ToArray()));
+        }
     }
 }
